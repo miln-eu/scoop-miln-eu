@@ -24,5 +24,17 @@
   "checkver": {
     "url": "https://miln.eu/keysafe/index.xml",
     "xpath": "/rss/channel/item/*[local-name() = \"version\"]"
+  },
+  "autoupdate": {
+    "architecture": {
+      "32bit": {
+        "url": "https://miln.eu/keysafe/miln-keysafe-v$version-windows-386.zip",
+        "extract_dir": "miln-keysafe-v$version-windows-386"
+      },
+      "64bit": {
+        "url": "https://miln.eu/keysafe/miln-keysafe-v$version-windows-amd64.zip",
+        "extract_dir": "miln-keysafe-v$version-windows-amd64"
+      }
+    }
   }
 }
