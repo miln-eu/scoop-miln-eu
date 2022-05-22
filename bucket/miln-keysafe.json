@@ -1,0 +1,28 @@
+{
+  "version": "1.2.0",
+  "description": "Read and decrypt Keychain files",
+  "homepage": "https://miln.eu/keysafe",
+  "licence": "Proprietary",
+  "architecture": {
+    "32bit": {
+      "url": "https://miln.eu/keysafe/miln-keysafe-v1.2.0-windows-386.zip",
+      "hash": "78e1b6f18b71eb548a130093c8a28a3daa55e1e9e7f35d238a406e4f5390093e",
+      "extract_dir": "miln-keysafe-v1.2.0-windows-386",
+      "bin": [
+        "keysafe.exe"
+      ]
+    },
+    "64bit": {
+      "url": "https://miln.eu/keysafe/miln-keysafe-v1.2.0-windows-amd64.zip",
+      "hash": "ac980babed93039816eeb46d9721ee72a33b51253e0c86987bbd5b9d9e23ea80",
+      "extract_dir": "miln-keysafe-v1.2.0-windows-amd64",
+      "bin": [
+        "keysafe.exe"
+      ]
+    }
+  },
+  "checkver": {
+    "url": "https://miln.eu/keysafe/index.xml",
+    "xpath": "/rss/channel/item/*[local-name() = \"version\"]"
+  }
+}
