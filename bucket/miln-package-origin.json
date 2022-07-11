@@ -1,0 +1,46 @@
+{
+  "version": "1.1.0",
+  "description": "A multi-platform multi-format software distribution server.",
+  "homepage": "https://packageorigin.com",
+  "licence": "Proprietary",
+  "architecture": {
+    "32bit": {
+      "url": "https://packageorigin.com/download/miln-package-origin-v1.1.0-windows-386.zip",
+      "hash": "8f89c4b0896b1d151704c0cb4cfa7c4b18fcc67a1d2df26a56e53dc4e2b23dcf",
+      "extract_dir": "miln-package-origin-v1.1.0-windows-386",
+      "bin": [
+        "miln-package-origin-v1.1.0-windows-386/packageorigin.exe"
+      ]
+    },
+    "64bit": {
+      "url": "https://packageorigin.com/download/miln-package-origin-v1.1.0-windows-amd64.zip",
+      "hash": "3f20a9ce64d75d3b3dbaeef013c9f3638d38db90892c3cc50dfb68c589886287",
+      "extract_dir": "miln-package-origin-v1.1.0-windows-amd64",
+      "bin": [
+        "miln-package-origin-v1.1.0-windows-amd64/packageorigin.exe"
+      ]
+    }
+  },
+  "checkver": {
+    "url": "https://packageorigin.com/download/index.xml",
+    "xpath": "/rss/channel/item/*[local-name() = \"version\"]"
+  },
+  "autoupdate": {
+    "architecture": {
+      "32bit": {
+        "url": "https://packageorigin.com/download/miln-package-origin-v$version-windows-386.zip",
+        "extract_dir": "miln-package-origin-v$version-windows-386",
+        "bin": [
+          "miln-package-origin-v$version-windows-386/packageorigin.exe"
+        ]
+      },
+      "64bit": {
+        "url": "https://packageorigin.com/download/miln-package-origin-v$version-windows-amd64.zip",
+        "extract_dir": "miln-package-origin-v$version-windows-amd64",
+        "bin": [
+          "miln-package-origin-v$version-windows-amd64/packageorigin.exe"
+        ]
+      }
+    }
+  }
+}
