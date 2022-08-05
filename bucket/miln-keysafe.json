@@ -1,23 +1,23 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Read and decrypt Keychain files",
   "homepage": "https://miln.eu/keysafe",
   "licence": "Proprietary",
   "architecture": {
     "32bit": {
-      "url": "https://miln.eu/keysafe/miln-keysafe-v1.2.0-windows-386.zip",
-      "hash": "78e1b6f18b71eb548a130093c8a28a3daa55e1e9e7f35d238a406e4f5390093e",
-      "extract_dir": "miln-keysafe-v1.2.0-windows-386",
+      "url": "https://miln.eu/keysafe/miln-keysafe-v1.3.0-windows-386.zip",
+      "hash": "5b40da6d83840b7020f785034f0e74d367d8365c8f24bf333e113a8712f00955",
+      "extract_dir": "miln-keysafe-v1.3.0-windows-386",
       "bin": [
-        "keysafe.exe"
+        "miln-keysafe-v1.3.0-windows-386/keysafe.exe"
       ]
     },
     "64bit": {
-      "url": "https://miln.eu/keysafe/miln-keysafe-v1.2.0-windows-amd64.zip",
-      "hash": "ac980babed93039816eeb46d9721ee72a33b51253e0c86987bbd5b9d9e23ea80",
-      "extract_dir": "miln-keysafe-v1.2.0-windows-amd64",
+      "url": "https://miln.eu/keysafe/miln-keysafe-v1.3.0-windows-amd64.zip",
+      "hash": "56875fe9102f95494f068f770db0448b01d3703ab3a076efc89023b6b67174f1",
+      "extract_dir": "miln-keysafe-v1.3.0-windows-amd64",
       "bin": [
-        "keysafe.exe"
+        "miln-keysafe-v1.3.0-windows-amd64/keysafe.exe"
       ]
     }
   },
@@ -29,11 +29,17 @@
     "architecture": {
       "32bit": {
         "url": "https://miln.eu/keysafe/miln-keysafe-v$version-windows-386.zip",
-        "extract_dir": "miln-keysafe-v$version-windows-386"
+        "extract_dir": "miln-keysafe-v$version-windows-386",
+        "bin": [
+          "miln-keysafe-v$version-windows-386/keysafe.exe"
+        ]
       },
       "64bit": {
         "url": "https://miln.eu/keysafe/miln-keysafe-v$version-windows-amd64.zip",
-        "extract_dir": "miln-keysafe-v$version-windows-amd64"
+        "extract_dir": "miln-keysafe-v$version-windows-amd64",
+        "bin": [
+          "miln-keysafe-v$version-windows-amd64/keysafe.exe"
+        ]
       }
     }
   }
